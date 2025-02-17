@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/styles/exercice3.css">
+</head>
+<body class="bg-light">
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center mb-4">Todo List</h2>
+
+                <div class="card shadow-lg p-4 border-0 rounded-3 mb-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label fw-bold">Name</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Enter todo name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="content" class="form-label fw-bold">Content</label>
+                            <input type="text" name="content" id="content" class="form-control" placeholder="Enter todo content">
+                        </div>
+
+                        <button type="button" id="add-todo-btn" class="btn btn-primary w-100">Add Todo</button>
+                    </form>
+                </div>
+
+                <div class="todo-list list-group"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/scripts/index.js"></script>
+</body>
+</html>

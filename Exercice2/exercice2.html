@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Word</title>
+
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@100..900&family=Montserrat:wght@100..900&family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/styles/exercice2.css">
+</head>
+<body class="bg-light d-flex justify-content-center align-items-center min-vh-100">
+
+    <div class="container bg-white p-4 rounded shadow-lg" style="max-width: 600px;">
+        <fieldset class="border p-3 rounded">
+            <legend class="fw-bold fs-5 text-primary">Parameters</legend>
+            <form>
+                <div class="mb-3">
+                    <label for="color" class="form-label">Text Color</label>
+                    <input type="color" name="color" id="color" class="form-control form-control-color w-100">
+                </div>
+                <div class="mb-3">
+                    <label for="font-size" class="form-label">Font Size</label>
+                    <input type="number" name="font-size" id="font-size" class="form-control" max="64" min="8" value="16">
+                </div>
+                <div class="mb-3">
+                    <label for="font-family" class="form-label">Font Family</label>
+                    <select name="font-family" id="font-family" class="form-select">
+                        <option value="Ariel">Default</option>
+                        <option value="Roboto">Roboto</option>
+                        <option value="Montserrat">Montserrat</option>
+                        <option value="VT323">VT323</option>
+                        <option value="Poly">Poly</option>
+                    </select>
+                </div>
+            </form>
+        </fieldset>
+
+        <div class="input-container mt-4">
+            <textarea id="text-input" class="form-control" placeholder="Enter text here..." rows="4"></textarea>
+        </div>
+  
+        <div class="output-container mt-3 text-center">
+            <p id="text-output" class="border rounded p-2 bg-light text-wrap" style="word-break: break-word; white-space: normal;"></p>
+        </div> 
+    </div>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/scripts/index.js"></script>
+</body>
+</html>
+

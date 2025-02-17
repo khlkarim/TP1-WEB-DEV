@@ -1,0 +1,34 @@
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.todo-item .itemContent {
+    flex: 1;
+}
+
+.todo-item .itemContent p {
+    margin: 0;
+}
+
+.todo-item .item-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-item-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.todo-item-button:hover {
+    transform: scale(1.2);
+}
